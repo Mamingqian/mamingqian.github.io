@@ -5,6 +5,7 @@ date:   2024-10-14 18:08:39 +00:00
 image: /images/OOD.png
 categories: research
 venue: FM4Science@NIPS-W
+paper: https://openreview.net/pdf?id=8jqhElTmNP
 authors: "<strong>Mingqian Ma</strong>, Taigao Ma, L. Jay Guo"
 ---
 Optical multilayer thin film structures are widely used in many photonic applications. The important part to enable these applications is inverse design, which seeks to identify a suitable structure that satisfy desired optical responses. We propose a self-improving data augmentation technique by leveraging neural networks' extrapolation ability. Using this method, we show significant improvement in various real-applicative design tasks with minimum fine-tuning, which can also be potentially generalized to inverse scientific foundation models.
