@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "NatureLM: Deciphering the Language of Nature for Scientific Discovery"
+date:   2025-02-10 18:08:39 +00:00
+image: /images/naturelm.png
+categories: research
+venue: ArXiv
+arxiv: https://arxiv.org/abs/2502.07527
+website: https://naturelm.github.io/
+authors: "NatureLM Team, Microsoft Research AI for Science"
+---
+NatureLM, developed by Microsoft Research AI for Science, is a groundbreaking sequence-based science foundation model designed to unify multiple scientific domains, including small molecules, materials, proteins, DNA and RNA. This innovative model leverages the "language of nature" to enable scientific discovery through text-based instructions.
