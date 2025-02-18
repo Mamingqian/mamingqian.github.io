@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "HybriDNA: A Hybrid Transformer-Mamba2 Long-Range DNA Language Model"
+date:   2025-02-17 18:08:39 +00:00
+image: /images/hybridna.png
+categories: research
+venue: ArXiv
+arxiv: https://arxiv.org/abs/2502.10807
+website: https://hybridna-project.github.io/HybriDNA-Project/
+authors: "<strong>Mingqian Ma</strong>, Guoqing Liu, Chuan Cao, Pan Deng et al."
+---
+Advances in natural language processing have inspired new approaches to modeling DNA, often called the “language of life.” However, DNA modeling requires handling ultra-long sequences with single-nucleotide precision and excelling in both generative and understanding tasks. We introduce HybriDNA, a decoder-only DNA language model that combines Transformer and Mamba2 architectures to efficiently process sequences up to 131kb. HybriDNA achieves state-of-the-art performance across 33 DNA understanding benchmarks and excels in generating synthetic regulatory elements. Our findings highlight its scalability from 300M to 7B parameters, demonstrating its potential to drive new discoveries in DNA research and applications.
