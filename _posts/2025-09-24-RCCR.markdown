@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Reverse-Complement Consistency for DNA Language Models"
+date:   2025-09-24 18:08:39 +00:00
+image: /images/rccr.png
+categories: research
+venue: ArXiv
+arxiv: https://arxiv.org/abs/2509.18529
+authors: "Mingqian Ma"
+---
+A simple fine-tuning recipe for Reverse-Complement Consistency tasks for DNA language models.
+
