@@ -4,7 +4,7 @@ title:  "Optical Multilayer Thin Film Structure Inverse Design: From Optimizatio
 date:   2024-09-28 18:08:39 +00:00
 image: /images/optics_survey.png
 categories: research
-venue: under review
+venue: iScience, Volume 28, Issue 4, 112222
 arxiv: https://arxiv.org/pdf/2409.17199
 authors: "Taigao Ma, <strong>Mingqian Ma</strong>, L. Jay Guo"
 ---
