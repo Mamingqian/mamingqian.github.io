@@ -1,0 +1,5 @@
+hub hct116_unadon_hub
+shortLabel HCT116 UNADON
+longLabel HCT116 SON/LMNB truth and prediction tracks
+genomesFile genomes.txt
+email none@example.com
