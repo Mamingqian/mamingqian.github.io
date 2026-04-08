@@ -7,7 +7,7 @@ track SON_truth
 type bigWig
 shortLabel SON_truth
 longLabel SON_truth
-bigDataUrl hg38/SON_truth.bw
+bigDataUrl SON_truth.bw
 parent SON_group
 visibility full
 autoScale on
@@ -18,7 +18,7 @@ track SON_son_unadon_full
 type bigWig
 shortLabel SON_son_unadon_full
 longLabel SON_son_unadon_full
-bigDataUrl hg38/SON_son_unadon_full.bw
+bigDataUrl SON_son_unadon_full.bw
 parent SON_group
 visibility full
 autoScale on
@@ -29,7 +29,7 @@ track SON_son_ag_seq
 type bigWig
 shortLabel SON_son_ag_seq
 longLabel SON_son_ag_seq
-bigDataUrl hg38/SON_son_ag_seq.bw
+bigDataUrl SON_son_ag_seq.bw
 parent SON_group
 visibility full
 autoScale on
@@ -40,7 +40,7 @@ track SON_son_ag_multimodal
 type bigWig
 shortLabel SON_son_ag_multimodal
 longLabel SON_son_ag_multimodal
-bigDataUrl hg38/SON_son_ag_multimodal.bw
+bigDataUrl SON_son_ag_multimodal.bw
 parent SON_group
 visibility full
 autoScale on
@@ -56,7 +56,7 @@ track LMNB_truth
 type bigWig
 shortLabel LMNB_truth
 longLabel LMNB_truth
-bigDataUrl hg38/LMNB_truth.bw
+bigDataUrl LMNB_truth.bw
 parent LMNB_group
 visibility full
 autoScale on
@@ -67,7 +67,7 @@ track LMNB_lmnb_unadon_full
 type bigWig
 shortLabel LMNB_lmnb_unadon_full
 longLabel LMNB_lmnb_unadon_full
-bigDataUrl hg38/LMNB_lmnb_unadon_full.bw
+bigDataUrl LMNB_lmnb_unadon_full.bw
 parent LMNB_group
 visibility full
 autoScale on
@@ -78,7 +78,7 @@ track LMNB_lmnb_ag_seq
 type bigWig
 shortLabel LMNB_lmnb_ag_seq
 longLabel LMNB_lmnb_ag_seq
-bigDataUrl hg38/LMNB_lmnb_ag_seq.bw
+bigDataUrl LMNB_lmnb_ag_seq.bw
 parent LMNB_group
 visibility full
 autoScale on
@@ -89,7 +89,7 @@ track LMNB_lmnb_ag_multimodal
 type bigWig
 shortLabel LMNB_lmnb_ag_multimodal
 longLabel LMNB_lmnb_ag_multimodal
-bigDataUrl hg38/LMNB_lmnb_ag_multimodal.bw
+bigDataUrl LMNB_lmnb_ag_multimodal.bw
 parent LMNB_group
 visibility full
 autoScale on
