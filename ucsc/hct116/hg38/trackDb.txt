@@ -25,6 +25,17 @@ autoScale on
 maxHeightPixels 100:60:20
 color 80,80,80
 
+track SON_son_unadon_seq
+type bigWig
+shortLabel SON_son_unadon_seq
+longLabel SON_son_unadon_seq
+bigDataUrl SON_son_unadon_seq.bw
+parent SON_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 148,103,189
+
 track SON_son_ag_seq
 type bigWig
 shortLabel SON_son_ag_seq
@@ -73,6 +84,17 @@ visibility full
 autoScale on
 maxHeightPixels 100:60:20
 color 80,80,80
+
+track LMNB_lmnb_unadon_seq
+type bigWig
+shortLabel LMNB_lmnb_unadon_seq
+longLabel LMNB_lmnb_unadon_seq
+bigDataUrl LMNB_lmnb_unadon_seq.bw
+parent LMNB_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 148,103,189
 
 track LMNB_lmnb_ag_seq
 type bigWig
