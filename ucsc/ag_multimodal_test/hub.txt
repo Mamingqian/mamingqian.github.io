@@ -1,0 +1,5 @@
+hub alphagenome_multimodal_test
+shortLabel AG MM TEST
+longLabel AlphaGenome multimodal official TEST aggregate tracks (GM12878 and HCT116)
+genomesFile genomes.txt
+email none@example.com

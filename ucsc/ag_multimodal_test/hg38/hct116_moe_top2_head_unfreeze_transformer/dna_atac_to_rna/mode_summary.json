@@ -1,0 +1,52 @@
+{
+  "mode": "rna",
+  "condition": "dna_atac_to_rna",
+  "head_name": "rna_seq",
+  "target_head_resolution": "resolution_1",
+  "num_tracks": 3,
+  "examples": 6713,
+  "target_bp_total": 1319829504,
+  "export_actions": [
+    "metrics",
+    "aggregate-bigwig"
+  ],
+  "aggregate_output_bin_bp": 128,
+  "aggregate_bin_contrib_total": 10317826,
+  "per_track_metrics_json": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/per_track_metrics.json",
+  "per_example_metrics_jsonl": null,
+  "tracks": [
+    {
+      "track_id": 136,
+      "per_base_pearson": 0.896548,
+      "per_base_mae": 0.016972,
+      "per_base_rmse": 0.522397,
+      "n_positions": 1319829504,
+      "pred_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/pred_track136.mean_agg.bw",
+      "truth_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/truth_track136.mean_agg.bw",
+      "pred_entries": 2641145,
+      "truth_entries": 2641145
+    },
+    {
+      "track_id": 407,
+      "per_base_pearson": 0.861326,
+      "per_base_mae": 0.016047,
+      "per_base_rmse": 0.535963,
+      "n_positions": 1319829504,
+      "pred_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/pred_track407.mean_agg.bw",
+      "truth_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/truth_track407.mean_agg.bw",
+      "pred_entries": 2641145,
+      "truth_entries": 2641145
+    },
+    {
+      "track_id": 577,
+      "per_base_pearson": 0.855661,
+      "per_base_mae": 0.030927,
+      "per_base_rmse": 1.490692,
+      "n_positions": 1319829504,
+      "pred_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/pred_track577.mean_agg.bw",
+      "truth_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/truth_track577.mean_agg.bw",
+      "pred_entries": 2641145,
+      "truth_entries": 2641145
+    }
+  ]
+}

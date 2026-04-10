@@ -1,0 +1,161 @@
+track gm12878_rna133_group
+superTrack on
+shortLabel GM12878 RNA133
+longLabel GM12878 DNA+ATAC->RNA aggregated bigWig (track 133; per-base PCC 0.8255)
+
+track gm12878_rna133_truth
+type bigWig
+shortLabel truth_133
+longLabel GM12878 RNA truth track 133 (mean aggregate)
+bigDataUrl gm12878_moe_top2/dna_atac_to_rna/truth_track133.mean_agg.bw
+parent gm12878_rna133_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 30,30,30
+
+track gm12878_rna133_pred
+type bigWig
+shortLabel pred_133
+longLabel GM12878 RNA prediction track 133 (mean aggregate; per-base PCC 0.8255)
+bigDataUrl gm12878_moe_top2/dna_atac_to_rna/pred_track133.mean_agg.bw
+parent gm12878_rna133_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 39,110,241
+
+track gm12878_atac63_group
+superTrack on
+shortLabel GM12878 ATAC63
+longLabel GM12878 DNA+RNA->ATAC aggregated bigWig (track 63; per-base PCC 0.8488)
+
+track gm12878_atac63_truth
+type bigWig
+shortLabel truth_63
+longLabel GM12878 ATAC truth track 63 (mean aggregate)
+bigDataUrl gm12878_moe_top2/dna_rna_to_atac/truth_track63.mean_agg.bw
+parent gm12878_atac63_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 30,30,30
+
+track gm12878_atac63_pred
+type bigWig
+shortLabel pred_63
+longLabel GM12878 ATAC prediction track 63 (mean aggregate; per-base PCC 0.8488)
+bigDataUrl gm12878_moe_top2/dna_rna_to_atac/pred_track63.mean_agg.bw
+parent gm12878_atac63_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 0,153,102
+
+track hct116_rna136_group
+superTrack on
+shortLabel HCT116 RNA136
+longLabel HCT116 DNA+ATAC->RNA aggregated bigWig (track 136; per-base PCC 0.8965)
+
+track hct116_rna136_truth
+type bigWig
+shortLabel truth_136
+longLabel HCT116 RNA truth track 136 (mean aggregate)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/truth_track136.mean_agg.bw
+parent hct116_rna136_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 30,30,30
+
+track hct116_rna136_pred
+type bigWig
+shortLabel pred_136
+longLabel HCT116 RNA prediction track 136 (mean aggregate; per-base PCC 0.8965)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/pred_track136.mean_agg.bw
+parent hct116_rna136_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 215,48,39
+
+track hct116_rna407_group
+superTrack on
+shortLabel HCT116 RNA407
+longLabel HCT116 DNA+ATAC->RNA aggregated bigWig (track 407; per-base PCC 0.8613)
+
+track hct116_rna407_truth
+type bigWig
+shortLabel truth_407
+longLabel HCT116 RNA truth track 407 (mean aggregate)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/truth_track407.mean_agg.bw
+parent hct116_rna407_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 30,30,30
+
+track hct116_rna407_pred
+type bigWig
+shortLabel pred_407
+longLabel HCT116 RNA prediction track 407 (mean aggregate; per-base PCC 0.8613)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/pred_track407.mean_agg.bw
+parent hct116_rna407_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 255,140,0
+
+track hct116_rna577_group
+superTrack on
+shortLabel HCT116 RNA577
+longLabel HCT116 DNA+ATAC->RNA aggregated bigWig (track 577; per-base PCC 0.8557)
+
+track hct116_rna577_truth
+type bigWig
+shortLabel truth_577
+longLabel HCT116 RNA truth track 577 (mean aggregate)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/truth_track577.mean_agg.bw
+parent hct116_rna577_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 30,30,30
+
+track hct116_rna577_pred
+type bigWig
+shortLabel pred_577
+longLabel HCT116 RNA prediction track 577 (mean aggregate; per-base PCC 0.8557)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_atac_to_rna/pred_track577.mean_agg.bw
+parent hct116_rna577_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 148,103,189
+
+track hct116_atac64_group
+superTrack on
+shortLabel HCT116 ATAC64
+longLabel HCT116 DNA+RNA->ATAC aggregated bigWig (track 64; per-base PCC 0.8066)
+
+track hct116_atac64_truth
+type bigWig
+shortLabel truth_64
+longLabel HCT116 ATAC truth track 64 (mean aggregate)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_rna_to_atac/truth_track64.mean_agg.bw
+parent hct116_atac64_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 30,30,30
+
+track hct116_atac64_pred
+type bigWig
+shortLabel pred_64
+longLabel HCT116 ATAC prediction track 64 (mean aggregate; per-base PCC 0.8066)
+bigDataUrl hct116_moe_top2_head_unfreeze_transformer/dna_rna_to_atac/pred_track64.mean_agg.bw
+parent hct116_atac64_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 121,85,72

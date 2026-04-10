@@ -1,0 +1,18 @@
+{
+  "mode": "atac",
+  "condition": "dna_rna_to_atac",
+  "head_name": "atac",
+  "target_head_resolution": "resolution_1",
+  "num_tracks": 1,
+  "examples": 6713,
+  "target_bp_total": 1319829504,
+  "tracks": [
+    {
+      "track_id": 64,
+      "per_base_pearson": 0.806627,
+      "per_base_mae": 0.041597,
+      "per_base_rmse": 0.369667,
+      "n_positions": 1319829504
+    }
+  ]
+}

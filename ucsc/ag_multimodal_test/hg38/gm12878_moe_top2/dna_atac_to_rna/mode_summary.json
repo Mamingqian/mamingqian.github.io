@@ -1,0 +1,30 @@
+{
+  "mode": "rna",
+  "condition": "dna_atac_to_rna",
+  "head_name": "rna_seq",
+  "target_head_resolution": "resolution_1",
+  "num_tracks": 1,
+  "examples": 6713,
+  "target_bp_total": 1319829504,
+  "export_actions": [
+    "metrics",
+    "aggregate-bigwig"
+  ],
+  "aggregate_output_bin_bp": 128,
+  "aggregate_bin_contrib_total": 10317826,
+  "per_track_metrics_json": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/gm12878_moe_top2/dna_atac_to_rna/per_track_metrics.json",
+  "per_example_metrics_jsonl": null,
+  "tracks": [
+    {
+      "track_id": 133,
+      "per_base_pearson": 0.825523,
+      "per_base_mae": 0.011383,
+      "per_base_rmse": 0.388045,
+      "n_positions": 1319829504,
+      "pred_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/gm12878_moe_top2/dna_atac_to_rna/pred_track133.mean_agg.bw",
+      "truth_bw": "/home/mingqiam/RegulatoryFM/results/alphagenome_multimodal_official_test/gm12878_moe_top2/dna_atac_to_rna/truth_track133.mean_agg.bw",
+      "pred_entries": 2641145,
+      "truth_entries": 2641145
+    }
+  ]
+}
