@@ -25,6 +25,17 @@ autoScale on
 maxHeightPixels 100:60:20
 color 39,110,241
 
+track gm12878_rna133_seqonly
+type bigWig
+shortLabel seq_only_133
+longLabel GM12878 RNA seq-only baseline track 133 (DNA only, no fusion)
+bigDataUrl ag_seq_only_gm12878_tracks/rna/pred_track133.mean_agg.bw
+parent gm12878_rna133_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 180,180,180
+
 track gm12878_atac63_group
 superTrack on
 shortLabel GM12878 ATAC63
@@ -51,6 +62,17 @@ visibility full
 autoScale on
 maxHeightPixels 100:60:20
 color 0,153,102
+
+track gm12878_atac63_seqonly
+type bigWig
+shortLabel seq_only_63
+longLabel GM12878 ATAC seq-only baseline track 63 (DNA only, no fusion)
+bigDataUrl ag_seq_only_gm12878_tracks/atac/pred_track63.mean_agg.bw
+parent gm12878_atac63_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 180,180,180
 
 track hct116_rna136_group
 superTrack on
@@ -79,6 +101,17 @@ autoScale on
 maxHeightPixels 100:60:20
 color 215,48,39
 
+track hct116_rna136_seqonly
+type bigWig
+shortLabel seq_only_136
+longLabel HCT116 RNA seq-only baseline track 136 (DNA only, no fusion)
+bigDataUrl ag_seq_only_hct116_tracks/rna/pred_track136.mean_agg.bw
+parent hct116_rna136_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 180,180,180
+
 track hct116_rna407_group
 superTrack on
 shortLabel HCT116 RNA407
@@ -105,6 +138,17 @@ visibility full
 autoScale on
 maxHeightPixels 100:60:20
 color 255,140,0
+
+track hct116_rna407_seqonly
+type bigWig
+shortLabel seq_only_407
+longLabel HCT116 RNA seq-only baseline track 407 (DNA only, no fusion)
+bigDataUrl ag_seq_only_hct116_tracks/rna/pred_track407.mean_agg.bw
+parent hct116_rna407_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 180,180,180
 
 track hct116_rna577_group
 superTrack on
@@ -133,6 +177,17 @@ autoScale on
 maxHeightPixels 100:60:20
 color 148,103,189
 
+track hct116_rna577_seqonly
+type bigWig
+shortLabel seq_only_577
+longLabel HCT116 RNA seq-only baseline track 577 (DNA only, no fusion)
+bigDataUrl ag_seq_only_hct116_tracks/rna/pred_track577.mean_agg.bw
+parent hct116_rna577_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 180,180,180
+
 track hct116_atac64_group
 superTrack on
 shortLabel HCT116 ATAC64
@@ -159,3 +214,14 @@ visibility full
 autoScale on
 maxHeightPixels 100:60:20
 color 121,85,72
+
+track hct116_atac64_seqonly
+type bigWig
+shortLabel seq_only_64
+longLabel HCT116 ATAC seq-only baseline track 64 (DNA only, no fusion)
+bigDataUrl ag_seq_only_hct116_tracks/atac/pred_track64.mean_agg.bw
+parent hct116_atac64_group
+visibility full
+autoScale on
+maxHeightPixels 100:60:20
+color 180,180,180
