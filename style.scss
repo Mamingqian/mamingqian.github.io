@@ -1,105 +1,336 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+/* ===== Design tokens ===== */
+:root {
+  --max-width: 760px;
+  --gutter: 1.5rem;
 
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
 
-/**************/
-/* BASE RULES */
-/**************/
+  --fg: #1a1a1a;
+  --fg-muted: #525866;
+  --fg-subtle: #8a93a3;
+  --bg: #fdfdfd;
+  --bg-card: #ffffff;
+  --border: #ececec;
+  --border-strong: #d8d8d8;
+  --accent: #1772d0;
+  --accent-hover: #f09228;
+  --highlight: #fff5d6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #ececec;
+    --fg-muted: #b0b6c0;
+    --fg-subtle: #7d8493;
+    --bg: #111316;
+    --bg-card: #181b1f;
+    --border: #2a2d33;
+    --border-strong: #3a3e45;
+    --accent: #4ea1f7;
+    --accent-hover: #f4b06a;
+    --highlight: #3b3416;
+  }
+}
+
+/* ===== Reset / base ===== */
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 a {
-  color: #1772d0;
+  color: var(--accent);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+a:hover, a:focus {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
+p { margin: 0 0 0.85em; }
+
+strong { font-weight: 600; color: var(--fg); }
+
+em { font-style: italic; }
+
+img { max-width: 100%; display: block; }
+
+::selection { background: var(--highlight); color: var(--fg); }
+
+/* ===== Layout ===== */
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem var(--gutter) 2rem;
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
+@media (max-width: 600px) {
+  .page { padding: 2rem var(--gutter) 1.5rem; }
 }
 
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+.section {
+  margin: 2.75rem 0;
 }
 
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+.section__title {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
 }
 
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
+.section__lede {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--fg-muted);
+}
+
+.section__hint {
+  font-size: 0.875rem;
+  color: var(--fg-subtle);
+  margin: -0.5rem 0 1.25rem;
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .hero__photo { order: -1; max-width: 180px; margin: 0 auto; }
+}
+
+.hero__name {
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  letter-spacing: -0.01em;
+}
+
+.hero__name-cn {
+  font-weight: 400;
+  color: var(--fg-muted);
+  margin-left: 0.4rem;
+}
+
+.hero__text p {
+  color: var(--fg-muted);
+  font-size: 0.975rem;
+}
+
+.hero__photo img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.hero__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
+  font-size: 0.95rem;
+  color: var(--fg-subtle);
+}
+
+.hero__links a { font-weight: 500; }
+
+/* ===== News ===== */
+.news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.95rem;
+}
+
+.news li:last-child { border-bottom: none; }
+
+.news__date {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+  padding-top: 0.15rem;
+}
+
+.news__body { color: var(--fg-muted); }
+.news__body a { font-weight: 500; }
+
+@media (max-width: 480px) {
+  .news li { grid-template-columns: 1fr; gap: 0.15rem; }
+  .news__date { padding-top: 0; }
+}
+
+/* ===== Publications ===== */
+.pubs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: pub;
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub:last-child { border-bottom: none; }
+
+.pub__media img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.pub__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pub__body--full { grid-column: 1 / -1; }
+
+.pub__title {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.15rem;
+  color: var(--fg);
+}
+
+.pub__authors {
+  margin: 0;
+  font-size: 0.925rem;
+  color: var(--fg-muted);
+}
+
+.pub__authors strong {
+  color: var(--fg);
+  font-weight: 600;
+  background: var(--highlight);
+  padding: 0 0.15rem;
+  border-radius: 2px;
+}
+
+.pub__venue {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--fg-subtle);
+}
+
+.pub__links {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 0.875rem;
+  color: var(--fg-subtle);
+}
+
+.pub__links a {
+  font-weight: 500;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+
+.pub__abstract {
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .pub { grid-template-columns: 1fr; gap: 0.75rem; }
+  .pub__media { max-width: 200px; }
+}
+
+/* ===== Education / timeline ===== */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  color: var(--fg-muted);
+}
+
+.timeline__when {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--fg-subtle);
+  padding-top: 0.1rem;
+}
+
+.timeline__what strong { color: var(--fg); }
+
+@media (max-width: 480px) {
+  .timeline li { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
   text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
+  font-size: 0.825rem;
+  color: var(--fg-subtle);
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+.footer p { margin: 0; }
