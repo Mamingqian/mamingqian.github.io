@@ -7,6 +7,6 @@ categories: research
 venue: ArXiv
 arxiv: https://arxiv.org/abs/2502.07527
 website: https://naturelm.github.io/
-authors: "NatureLM Team, Microsoft Research AI for Science"
+authors: "NatureLM Team (incl. <strong>Mingqian Ma</strong>), Microsoft Research AI for Science"
 ---
 NatureLM, developed by Microsoft Research AI for Science, is a groundbreaking sequence-based science foundation model designed to unify multiple scientific domains, including small molecules, materials, proteins, DNA and RNA. This innovative model leverages the "language of nature" to enable scientific discovery through text-based instructions.

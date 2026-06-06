@@ -34,7 +34,7 @@
         <h1 class="hero__name">Mingqian Ma <span class="hero__name-cn">马鸣谦</span></h1>
 
         <p>
-          I am a Master student at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, advised by
+          I am a master's student at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, advised by
           <a href="http://www.cs.cmu.edu/~jianma/">Prof. Jian Ma</a>. My work centers on foundation
           models for science, with a particular focus on DNA and genomics.
         </p>
@@ -129,7 +129,7 @@
           <div class="pub__body{% unless post.image %} pub__body--full{% endunless %}">
             <h3 class="pub__title">{{ post.title }}</h3>
             <p class="pub__authors">{{ post.authors }}</p>
-            <p class="pub__venue"><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</p>
+            <p class="pub__venue"><em>{{ post.venue }}</em>, {% if post.year %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}</p>
             <p class="pub__links">
               {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
               {% if post.paper %}{% if post.arxiv %} · {% endif %}<a href="{{ post.paper }}">paper</a>{% endif %}
