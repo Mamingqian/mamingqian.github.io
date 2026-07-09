@@ -4,7 +4,7 @@ title:  "SkillFoundry: Building Self-Evolving Agent Skill Libraries from Heterog
 date:   2026-04-05 18:08:39 +00:00
 image: /images/skillfoundry.png
 categories: research
-venue: ArXiv
+venue: Conference on Language Modeling (COLM)
 arxiv: https://arxiv.org/abs/2604.03964
 website: https://ma-compbio-lab.github.io/SkillFoundry/
 code: https://github.com/ma-compbio-lab/SkillFoundry
