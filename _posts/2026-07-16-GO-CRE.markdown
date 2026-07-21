@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Reconstructing sequence-grammar trajectories enables interpretable and tunable cis-regulatory element design"
+date: 2026-07-16 12:00:00 +08:00
+image: /images/gocre.png
+categories: research
+area: genome
+venue: bioRxiv
+paper: https://www.biorxiv.org/content/10.64898/2026.07.10.737719v2
+code: https://github.com/zeyuChenLab/GO-CRE
+authors: "<strong>Mingqian Ma</strong>*, Wanjuan Bu*, Guoqing Liu*, Yuxuan Liu*, Sizhen Liu, Zhen Zhao, Shijie Yao, Qingru Hua, Yujie Zhang, Cuiting Zhong, Haitao Huang, Pan Deng, Peiran Jin, Qijin Yin, Chuan Cao, Haiguang Liu, Mo Xu, Yuan He, Tao Qin, Zeyu Chen"
+---
+GO-CRE combines efficient sequence generation, predictor-guided reinforcement learning, and trajectory-level interpretation to make cis-regulatory element design interpretable and tunable. Sequence-grammar trajectory reconstruction exposed a low-complexity polyG trap and enabled biologically informed reward shaping, while lentiviral MPRA validated cell-type-specific activity in K562 and HepG2.

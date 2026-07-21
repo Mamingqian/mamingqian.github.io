@@ -4,6 +4,7 @@ title:  "AgentCo-op: Retrieval-Based Synthesis of Interoperable Multi-Agent Work
 date:   2026-05-19 18:08:39 +00:00
 image: /images/agentcoop.png
 categories: research
+area: agents
 venue: ArXiv
 arxiv: https://arxiv.org/abs/2605.20425
 website: https://ma-compbio-lab.github.io/AgentCo-Op

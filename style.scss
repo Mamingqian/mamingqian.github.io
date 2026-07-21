@@ -206,6 +206,18 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===== Publications ===== */
+.pub-group + .pub-group { margin-top: 2rem; }
+
+.pub-group__title {
+  margin: 1.25rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+}
+
 .pubs {
   list-style: none;
   margin: 0;
@@ -247,6 +259,8 @@ img { max-width: 100%; display: block; }
   margin: 0 0 0.15rem;
   color: var(--fg);
 }
+
+.pub__title a { color: inherit; }
 
 .pub__authors {
   margin: 0;
@@ -291,6 +305,12 @@ img { max-width: 100%; display: block; }
   .pub { grid-template-columns: 1fr; gap: 0.75rem; }
   .pub__media { max-width: 200px; }
 }
+
+.publication-page { max-width: 820px; }
+.publication-page__back { margin: 0 0 2rem; font-size: 0.9rem; }
+.publication-page h1 { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.15; margin-bottom: 1rem; }
+.publication-page__image { width: 100%; margin: 2rem 0; border: 1px solid var(--border); border-radius: 8px; }
+.publication-page__abstract { color: var(--fg-muted); font-size: 1rem; line-height: 1.75; }
 
 /* ===== Education / timeline ===== */
 .timeline {

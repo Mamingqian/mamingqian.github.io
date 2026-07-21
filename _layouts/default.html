@@ -15,18 +15,18 @@
   <meta charset="utf-8">
   <meta name="author" content="{{ site.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mingqian Ma — master's student at CMU. Foundation models for science: DNA / genomics and agentic systems.">
+  <meta name="description" content="Mingqian Ma — genomic foundation models and AI for biological design. First and core author of CENO and first author of GO-CRE.">
 
   <!-- Open Graph / social preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mingqian Ma">
-  <meta property="og:description" content="Master's student at CMU. Foundation models for science: DNA / genomics and agentic systems.">
+  <meta property="og:description" content="Genomic foundation models and AI for biological design. First and core author of CENO and first author of GO-CRE.">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/profile_photo.JPG">
   <meta property="og:image:alt" content="Mingqian Ma">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mingqian Ma">
-  <meta name="twitter:description" content="Master's student at CMU. Foundation models for science: DNA / genomics and agentic systems.">
+  <meta name="twitter:description" content="Genomic foundation models and AI for biological design. First and core author of CENO and first author of GO-CRE.">
   <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/profile_photo.JPG">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
@@ -50,14 +50,24 @@
 
         <p>
           I am a master's student at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, advised by
-          <a href="http://www.cs.cmu.edu/~jianma/">Prof. Jian Ma</a>. My work centers on foundation
-          models for science — from pretraining DNA and genomic models to the agentic systems that turn them into real scientific workflows.
+          <a href="http://www.cs.cmu.edu/~jianma/">Prof. Jian Ma</a>, and a research intern in AI for Science at the
+          <a href="https://www.shlab.org.cn/">Shanghai Artificial Intelligence Laboratory</a>. My research focuses on
+          genomic foundation models and AI for biological design. I am the first and a core author of
+          <a href="https://cladeteam.github.io/ceno.github.io/">CENO</a>, a genome-scale world model that unifies
+          long-context sequence understanding, evolutionary variant interpretation, and programmable regulatory design.
+        </p>
+
+        <p>
+          My work follows a continuous line from <a href="https://arxiv.org/abs/2502.10807">HybriDNA</a> to
+          <a href="https://www.biorxiv.org/content/10.64898/2026.07.10.737719v2">GO-CRE</a> and CENO:
+          building efficient long-context DNA models, turning evolutionary and functional feedback into sequence design,
+          and validating model-generated regulatory elements experimentally. I also build scientific agents for reproducible research workflows.
         </p>
 
         <p>
           Previously, I was a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/">Microsoft Research AI for Science</a>
-          with <a href="https://fiberleif.github.io">Dr. Guoqing Liu</a>, where I worked on pretraining DNA foundation models
-          (<a href="https://arxiv.org/abs/2502.10807">HybriDNA</a>, <a href="https://arxiv.org/abs/2502.07527">NatureLM</a>).
+          with <a href="https://fiberleif.github.io">Dr. Guoqing Liu</a>, where I worked on HybriDNA and
+          <a href="https://arxiv.org/abs/2502.07527">NatureLM</a>.
           Before that, I completed a dual-degree program — a BSE in Computer Science &amp; Engineering at the
           <a href="https://eecs.engin.umich.edu/">University of Michigan</a> and a BE in Electrical &amp; Computer Engineering at
           <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
@@ -83,6 +93,21 @@
     <section class="section">
       <h2 class="section__title">News</h2>
       <ul class="news">
+        <li>
+          <span class="news__date">Jul&nbsp;2026</span>
+          <span class="news__body">
+            We released <a href="https://cladeteam.github.io/ceno.github.io/">CENO</a> at WAIC 2026, together with its
+            <a href="https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf">technical report</a>,
+            <a href="https://github.com/CladeTeam/CENO">code</a>, and open model checkpoints.
+          </span>
+        </li>
+        <li>
+          <span class="news__date">Jul&nbsp;2026</span>
+          <span class="news__body">
+            New preprint: <a href="https://www.biorxiv.org/content/10.64898/2026.07.10.737719v2">GO-CRE</a> — interpretable and tunable
+            cis-regulatory element design with lentiviral MPRA validation.
+          </span>
+        </li>
         <li>
           <span class="news__date">Jul&nbsp;2026</span>
           <span class="news__body">
@@ -121,53 +146,41 @@
     <section class="section">
       <h2 class="section__title">Research</h2>
       <p class="section__lede">
-        I build foundation models for sequential scientific data — biology in particular.
+        I build genomic foundation models that connect long-context sequence understanding, evolutionary reasoning, and programmable biological design.
       </p>
       <p class="section__lede">
-        Current questions: how do we pretrain DNA models that scale to ultra-long genomic context, generalize across organisms, and respect the symmetries of biology? How do we wire foundation models into agentic systems that can drive real scientific workflows?
+        Current questions: how can one generative model read, score, and write DNA across nucleotide-to-megabase scales? How can evolutionary and experimental feedback make biological sequence design more interpretable and reliable? I also study scientific agents that turn models, tools, and data into reproducible research workflows.
       </p>
     </section>
 
     <!-- ============== PUBLICATIONS ============== -->
     <section class="section">
       <h2 class="section__title">Publications</h2>
-      <p class="section__hint">* denotes equal contribution. <a href="https://scholar.google.com/citations?user=H4Z-47gAAAAJ&hl=en">Full list on Google Scholar</a>.</p>
+      <p class="section__hint">* denotes equal contribution unless stated otherwise. <a href="https://scholar.google.com/citations?user=H4Z-47gAAAAJ&hl=en">Full list on Google Scholar</a>.</p>
 
-      <ol class="pubs">
-        {% assign research_posts = site.posts | where:"categories", "research" %}
-        {% for post in research_posts %}
-        <li class="pub">
-          {% if post.image %}
-          <div class="pub__media">
-            <img src="{{ site.baseurl }}/tn{{ post.image }}" alt="{{ post.title }} thumbnail" loading="lazy">
-          </div>
-          {% endif %}
-          <div class="pub__body{% unless post.image %} pub__body--full{% endunless %}">
-            <h3 class="pub__title">{{ post.title }}</h3>
-            <p class="pub__authors">{{ post.authors }}</p>
-            <p class="pub__venue"><em>{{ post.venue }}</em>, {% if post.year %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}</p>
-            <p class="pub__links">
-              {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
-              {% if post.paper %}{% if post.arxiv %} · {% endif %}<a href="{{ post.paper }}">paper</a>{% endif %}
-              {% if post.code %} · <a href="{{ post.code }}">code</a>{% endif %}
-              {% if post.website %} · <a href="{{ post.website }}">website</a>{% endif %}
-              {% if post.video %} · <a href="{{ post.video }}">video</a>{% endif %}
-              {% if post.poster %} · <a href="{{ post.poster }}">poster</a>{% endif %}
-              {% if post.slides %} · <a href="{{ post.slides }}">slides</a>{% endif %}
-            </p>
-            {% if post.excerpt %}
-            <p class="pub__abstract">{{ post.excerpt | strip_html | strip_newlines }}</p>
-            {% endif %}
-          </div>
-        </li>
-        {% endfor %}
-      </ol>
+      {% assign research_posts = site.posts | where:"categories", "research" %}
+      {% assign genome_posts = research_posts | where:"area", "genome" %}
+      {% assign agent_posts = research_posts | where:"area", "agents" %}
+
+      <div class="pub-group">
+        <h3 class="pub-group__title">Genome Models &amp; Biological Design</h3>
+        {% include publication-list.html posts=genome_posts %}
+      </div>
+
+      <div class="pub-group">
+        <h3 class="pub-group__title">Scientific Agents</h3>
+        {% include publication-list.html posts=agent_posts %}
+      </div>
     </section>
 
     <!-- ============== EDUCATION ============== -->
     <section class="section">
       <h2 class="section__title">Education &amp; Experience</h2>
       <ul class="timeline">
+        <li>
+          <span class="timeline__when">Dec&nbsp;2025&nbsp;–&nbsp;Present</span>
+          <span class="timeline__what"><strong>Shanghai Artificial Intelligence Laboratory</strong> · Research Intern, AI for Science; first and core author of CENO</span>
+        </li>
         <li>
           <span class="timeline__when">2025&nbsp;–&nbsp;Present</span>
           <span class="timeline__what"><strong>Carnegie Mellon University</strong> · M.S., advised by Prof. Jian Ma</span>

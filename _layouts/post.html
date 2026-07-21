@@ -1,3 +1,31 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>{{ page.title }} | {{ site.name }}</title>
+  <meta charset="utf-8">
+  <meta name="author" content="{{ site.name }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ content | strip_html | strip_newlines | truncate: 180 }}">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+  <main class="page publication-page">
+    <p class="publication-page__back"><a href="{{ '/' | relative_url }}">← Mingqian Ma</a></p>
+    <article>
+      <h1>{{ page.title }}</h1>
+      <p class="pub__authors">{{ page.authors }}</p>
+      <p class="pub__venue"><em>{{ page.venue }}</em>, {% if page.year %}{{ page.year }}{% else %}{{ page.date | date: "%Y" }}{% endif %}</p>
+      <p class="pub__links">
+        {% if page.arxiv %}<a href="{{ page.arxiv }}">arXiv</a>{% endif %}
+        {% if page.paper %}{% if page.arxiv %} · {% endif %}<a href="{{ page.paper }}">paper</a>{% endif %}
+        {% if page.code %} · <a href="{{ page.code }}">code</a>{% endif %}
+        {% if page.website %} · <a href="{{ page.website }}">website</a>{% endif %}
+        {% if page.models %} · <a href="{{ page.models }}">models</a>{% endif %}
+      </p>
+      {% if page.image %}<img class="publication-page__image" src="{{ page.image | relative_url }}" alt="{{ page.title }} figure">{% endif %}
+      <div class="publication-page__abstract">{{ content }}</div>
+    </article>
+  </main>
+</body>
+</html>

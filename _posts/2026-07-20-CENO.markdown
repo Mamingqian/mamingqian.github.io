@@ -1,0 +1,15 @@
+---
+layout: post
+title: "CENO: A Genome-Scale World Model for Evolutionary Sequence Interpretation and Programmable Regulatory Design"
+date: 2026-07-20 12:00:00 +08:00
+image: /images/ceno.png
+categories: research
+area: genome
+venue: Technical Report
+paper: https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf
+website: https://cladeteam.github.io/ceno.github.io/
+code: https://github.com/CladeTeam/CENO
+models: https://huggingface.co/collections/CladeTeam/ceno
+authors: "<strong>Mingqian Ma</strong> (first &amp; core author), Yucheng Wu, Xin Chen, Feifei Jiang, Peijun Lin, Dongxin Ye, Yidi Sun, Yijing Zhang, Tianqiong Shi, Yu Zhao, Wanli Ouyang, Bowen Zhou, Lei Bai, Yuchen Ren"
+---
+CENO is a family of long-context generative genomic world models that uses one autoregressive backbone to understand long DNA, score mutation effects with evolutionary context, and design regulatory sequences. Its staged curriculum reaches one-million-token whole-genome context, while evolutionary post-training and reinforcement-learning-guided design connect sequence interpretation with programmable biological function.

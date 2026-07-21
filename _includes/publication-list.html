@@ -1,0 +1,29 @@
+<ol class="pubs">
+  {% for post in include.posts %}
+  <li class="pub">
+    {% if post.image %}
+    <div class="pub__media">
+      <img src="{{ site.baseurl }}/tn{{ post.image }}" alt="{{ post.title }} thumbnail" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="pub__body{% unless post.image %} pub__body--full{% endunless %}">
+      <h3 class="pub__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="pub__authors">{{ post.authors }}</p>
+      <p class="pub__venue"><em>{{ post.venue }}</em>, {% if post.year %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}</p>
+      <p class="pub__links">
+        {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
+        {% if post.paper %}{% if post.arxiv %} · {% endif %}<a href="{{ post.paper }}">paper</a>{% endif %}
+        {% if post.code %} · <a href="{{ post.code }}">code</a>{% endif %}
+        {% if post.website %} · <a href="{{ post.website }}">website</a>{% endif %}
+        {% if post.models %} · <a href="{{ post.models }}">models</a>{% endif %}
+        {% if post.video %} · <a href="{{ post.video }}">video</a>{% endif %}
+        {% if post.poster %} · <a href="{{ post.poster }}">poster</a>{% endif %}
+        {% if post.slides %} · <a href="{{ post.slides }}">slides</a>{% endif %}
+      </p>
+      {% if post.excerpt %}
+      <p class="pub__abstract">{{ post.excerpt | strip_html | strip_newlines }}</p>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
