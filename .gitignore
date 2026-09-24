@@ -1,13 +1,12 @@
 _site
-.DS_Store
-.jekyll
+.jekyll-cache
 .jekyll-metadata
+.sass-cache
 .bundle
 vendor
-.sass-cache
 Gemfile
 Gemfile.lock
 node_modules
 package.json
-favicon.ico
+.DS_Store
 .claude/
