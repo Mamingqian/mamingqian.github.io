@@ -5,7 +5,7 @@ date:   2026-05-19 18:08:39 +00:00
 image: /images/agentcoop.png
 categories: research
 area: agents
-venue: ArXiv
+venue: arXiv
 arxiv: https://arxiv.org/abs/2605.20425
 website: https://ma-compbio-lab.github.io/AgentCo-Op
 code: https://github.com/ma-compbio-lab/AgentCo-op

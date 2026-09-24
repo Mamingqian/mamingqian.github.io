@@ -70,7 +70,7 @@ strong { font-weight: 600; color: var(--fg); }
 
 em { font-style: italic; }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 ::selection { background: var(--highlight); color: var(--fg); }
 

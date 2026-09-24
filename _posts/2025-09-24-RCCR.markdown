@@ -5,8 +5,8 @@ date:   2025-09-24 18:08:39 +00:00
 image: /images/rccr.png
 categories: research
 area: genome
-venue: ArXiv
+venue: arXiv
 arxiv: https://arxiv.org/abs/2509.18529
-authors: "Mingqian Ma"
+authors: "<strong>Mingqian Ma</strong>"
 ---
-A simple fine-tuning recipe for Reverse-Complement Consistency tasks for DNA language models.
+A DNA sequence and its reverse complement often carry the same biological meaning, yet DNA language models frequently make inconsistent predictions on the two strands. Reverse-Complement Consistency Regularization (RCCR) is a simple, model-agnostic fine-tuning objective that penalizes the divergence between a model's prediction on a sequence and the aligned prediction on its reverse complement. It is evaluated on Nucleotide Transformer, HyenaDNA, and DNABERT-2 across sequence classification, scalar regression, and profile prediction tasks.

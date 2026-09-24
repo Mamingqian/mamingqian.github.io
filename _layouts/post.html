@@ -1,13 +1,42 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+
+  {% assign summary = content | strip_html | strip_newlines | truncate: 180 %}
   <title>{{ page.title }} | {{ site.name }}</title>
   <meta charset="utf-8">
   <meta name="author" content="{{ site.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ content | strip_html | strip_newlines | truncate: 180 }}">
+  <meta name="description" content="{{ summary }}">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ summary }}">
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">{% endif %}
+  <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ summary }}">
+  {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">{% endif %}
+
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
   <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <main class="page publication-page">
@@ -22,6 +51,9 @@
         {% if page.code %} · <a href="{{ page.code }}">code</a>{% endif %}
         {% if page.website %} · <a href="{{ page.website }}">website</a>{% endif %}
         {% if page.models %} · <a href="{{ page.models }}">models</a>{% endif %}
+        {% if page.video %} · <a href="{{ page.video }}">video</a>{% endif %}
+        {% if page.poster %} · <a href="{{ page.poster }}">poster</a>{% endif %}
+        {% if page.slides %} · <a href="{{ page.slides }}">slides</a>{% endif %}
       </p>
       {% if page.image %}<img class="publication-page__image" src="{{ page.image | relative_url }}" alt="{{ page.title }} figure">{% endif %}
       <div class="publication-page__abstract">{{ content }}</div>
